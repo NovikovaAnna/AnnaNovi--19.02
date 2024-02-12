@@ -1,0 +1,39 @@
+.reviews {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.posts {
+    max-width: 800px;
+}
+
+.post {
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.post-title {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post-body {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 900px) {
+    .posts {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .post {
+        padding: 15px;
+    }
+}

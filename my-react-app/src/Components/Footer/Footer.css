@@ -1,0 +1,59 @@
+.footer {
+    display: flex;
+    justify-content: center; /* Центрирование содержимого футера */
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #d0cccc;
+    border-bottom: 1px solid #a2a5a8;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.footer .menu-container {
+    display: flex;
+    justify-content: center; /* Добавлено для центрирования меню в контейнере */
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.menu li {
+    margin: 0 1rem; /* Отступы между элементами меню */
+    font-size: 1rem; /* Размер шрифта для элементов меню */
+    white-space: nowrap; /* Запрет на перенос текста */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333; /* Цвет текста элементов меню */
+    font-weight: normal; /* Вес шрифта для элементов меню */
+    transition: color 0.3s ease; /* Плавный переход цвета при наведении */
+}
+
+.menu a:hover {
+    color: #6c6d6e; /* Цвет текста при наведении */
+}
+
+/* Ответственное поведение для мобильных устройств */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 0.5rem 0; /* Вертикальные отступы для мобильных устройств */
+    }
+}

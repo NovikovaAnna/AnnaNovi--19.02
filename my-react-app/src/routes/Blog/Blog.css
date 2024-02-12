@@ -1,0 +1,40 @@
+/* Blog.css */
+.blog {
+    display: flex;
+    justify-content: center; /* Center the blog posts container */
+    padding: 20px;
+}
+
+.posts {
+    max-width: 800px; /* Adjust based on your preference */
+}
+
+.post {
+    background-color: #f9f9f9; /* Light grey background for each post */
+    border: 1px solid #e1e1e1; /* Slight border for definition */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    padding: 20px; /* Padding inside each post */
+    margin-bottom: 20px; /* Space between posts */
+}
+
+.post-title {
+    color: #333; /* Dark grey color for the title */
+    margin-bottom: 10px; /* Space between the title and body text */
+}
+
+.post-body {
+    color: #666; /* Lighter grey color for the body text */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .posts {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .post {
+        padding: 15px;
+    }
+}

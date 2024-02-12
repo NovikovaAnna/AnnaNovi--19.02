@@ -1,0 +1,72 @@
+:root {
+    --main-color: #d0cccc; /* Example color */
+    --main-background: rgba(255, 255, 255, 0.35); /* Example background color, usually white */
+}
+
+.blackout {
+    width: 100vw;
+    height: 100%;
+    background: rgba(41, 41, 41, 0.6);
+    position: fixed; /* fixed is typically used for overlays */
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-button {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -7.5rem;
+    left: 14.5rem;
+    border: 2px solid var(--main-color);
+    box-sizing: border-box;
+    border-radius: 100px;
+    z-index: 3;
+    background-color: var(--main-background)
+}
+
+.close-button img {
+    width: 50%
+}
+.contact-form {
+    position: relative; /* position: absolute may be used depending on the desired effect */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* shadow effect */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* This adds space between the grid items */
+}
+
+.contact-form div {
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.button-form {
+    width: 100%; /* This ensures the button stretches to the container width */
+}
+
+

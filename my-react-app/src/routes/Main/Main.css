@@ -1,0 +1,106 @@
+/* Используйте переменные для цветов для удобства изменения темы */
+:root {
+    --main-color: #d0cccc;
+    --accent-color: #d5bbbb;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --button-bg-color: #6c6d6e;
+    --button-hover-bg-color: #2c2f33;
+}
+
+.body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Ограничение ширины для больших экранов */
+    width: 100%;
+    margin: auto;
+}
+
+.main-container-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 60%;
+}
+
+.main-rectangle {
+    width: 12.5rem;
+    height: .625rem;
+    background-color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.main-h1 {
+    font-size: 5rem; /* Меньше размер для лучшего восприятия */
+    letter-spacing: 0.15rem; /* Уменьшенный межбуквенный интервал */
+}
+
+.main-p {
+    font-size: 5rem; /* Чуть больше размер для лучшей читаемости */
+    margin-bottom: 2rem;
+}
+
+.desc {
+    font-size: 2rem; /* Меньше размер для лучшего восприятия */
+    letter-spacing: 0.1rem; /* Уменьшенный межбуквенный интервал */
+    color: #f9f9f9;
+}
+
+.photo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-height: 590px;
+}
+
+/* Стили для кнопок */
+.button, .formButton {
+    background-color: var(--button-bg-color);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+}
+
+.button:hover, .formButton:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+/* Дополнительные медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-container-info, .photo {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .photo {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-right: 0;
+    }
+}

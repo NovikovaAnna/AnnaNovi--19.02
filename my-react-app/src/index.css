@@ -1,0 +1,75 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #fdc2c2;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #fdc2c2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение элементов */
+  justify-content: flex-start; /* Выравнивание содержимого от начала страницы */
+  align-items: stretch; /* Элементы растягиваются на всю ширину */
+  min-height: 100vh; /* Минимальная высота на 100% от высоты видимой области */
+  font-family: Roboto, sans-serif;
+  --main-color: #d0cccc; /* Пользовательские свойства CSS */
+  --main-background: #bdb9b9;
+  background-color: var(--main-background); /* Использование пользовательского свойства для фона */
+  color: var(--main-color); /* Использование пользовательского свойства для цвета текста */
+  overflow: auto; /* При необходимости добавляется прокрутка */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  /*border-radius: 8px;*/
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #6c6d6e;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #6c6d6e;
+  }
+  button {
+    background-color: #6c6d6e;
+  }
+}
